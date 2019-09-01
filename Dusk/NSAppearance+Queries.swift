@@ -31,6 +31,10 @@ extension NSAppearance {
     }
 
     /// Attempts to determine the most resonable opposite-themed appearance
+    ///
+    /// If running on a version of macOS < 10.14, vibrantLight and vibrantDark
+    /// are the only opposites possible. This does have the effect of adjusting
+    /// an NSWindow's chrome.
     public var oppositeAppearance: NSAppearance? {
         if #available(OSX 10.14, *) {
             switch name {
