@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91AE5EB236BC9F100F3B364 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AE5EA236BC9F100F3B364 /* DynamicColor.swift */; };
+		C91AE5EF236C664C00F3B364 /* DynamicColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AE5EE236C664C00F3B364 /* DynamicColorTests.swift */; };
+		C91AE5F3236C6BF400F3B364 /* NSAppearance+Modification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AE5F2236C6BF400F3B364 /* NSAppearance+Modification.swift */; };
+		C91AE5F5236C836900F3B364 /* NSAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AE5F4236C836900F3B364 /* NSAppearanceTests.swift */; };
+		C91AE614236CF29E00F3B364 /* WrappedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AE613236CF29E00F3B364 /* WrappedColor.swift */; };
+		C91AE616236D9CB900F3B364 /* DynamicColorProviderCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AE615236D9CB900F3B364 /* DynamicColorProviderCollection.swift */; };
 		C91CF84F22A41DC7007107BB /* Dusk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91CF84522A41DC7007107BB /* Dusk.framework */; };
-		C91CF85422A41DC7007107BB /* DuskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CF85322A41DC7007107BB /* DuskTests.swift */; };
 		C91CF85622A41DC7007107BB /* Dusk.h in Headers */ = {isa = PBXBuildFile; fileRef = C91CF84822A41DC7007107BB /* Dusk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C91CF86122A4408A007107BB /* ApearanceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CF86022A4408A007107BB /* ApearanceObserver.swift */; };
 		C91CF86522A44268007107BB /* NSAppearance+Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CF86422A44268007107BB /* NSAppearance+Queries.swift */; };
@@ -26,11 +31,16 @@
 
 /* Begin PBXFileReference section */
 		C91AE5E9236BC4F000F3B364 /* DuskTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DuskTests.xcconfig; sourceTree = "<group>"; };
+		C91AE5EA236BC9F100F3B364 /* DynamicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
+		C91AE5EE236C664C00F3B364 /* DynamicColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColorTests.swift; sourceTree = "<group>"; };
+		C91AE5F2236C6BF400F3B364 /* NSAppearance+Modification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAppearance+Modification.swift"; sourceTree = "<group>"; };
+		C91AE5F4236C836900F3B364 /* NSAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAppearanceTests.swift; sourceTree = "<group>"; };
+		C91AE613236CF29E00F3B364 /* WrappedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedColor.swift; sourceTree = "<group>"; };
+		C91AE615236D9CB900F3B364 /* DynamicColorProviderCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColorProviderCollection.swift; sourceTree = "<group>"; };
 		C91CF84522A41DC7007107BB /* Dusk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dusk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91CF84822A41DC7007107BB /* Dusk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dusk.h; sourceTree = "<group>"; };
 		C91CF84922A41DC7007107BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91CF84E22A41DC7007107BB /* DuskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C91CF85322A41DC7007107BB /* DuskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuskTests.swift; sourceTree = "<group>"; };
 		C91CF85522A41DC7007107BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91CF85F22A41DEE007107BB /* Dusk.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dusk.xcconfig; sourceTree = "<group>"; };
 		C91CF86022A4408A007107BB /* ApearanceObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApearanceObserver.swift; sourceTree = "<group>"; };
@@ -82,6 +92,10 @@
 				C91CF85F22A41DEE007107BB /* Dusk.xcconfig */,
 				C91CF86022A4408A007107BB /* ApearanceObserver.swift */,
 				C91CF86422A44268007107BB /* NSAppearance+Queries.swift */,
+				C91AE5EA236BC9F100F3B364 /* DynamicColor.swift */,
+				C91AE5F2236C6BF400F3B364 /* NSAppearance+Modification.swift */,
+				C91AE613236CF29E00F3B364 /* WrappedColor.swift */,
+				C91AE615236D9CB900F3B364 /* DynamicColorProviderCollection.swift */,
 			);
 			path = Dusk;
 			sourceTree = "<group>";
@@ -89,9 +103,10 @@
 		C91CF85222A41DC7007107BB /* DuskTests */ = {
 			isa = PBXGroup;
 			children = (
-				C91CF85322A41DC7007107BB /* DuskTests.swift */,
 				C91CF85522A41DC7007107BB /* Info.plist */,
 				C91AE5E9236BC4F000F3B364 /* DuskTests.xcconfig */,
+				C91AE5EE236C664C00F3B364 /* DynamicColorTests.swift */,
+				C91AE5F4236C836900F3B364 /* NSAppearanceTests.swift */,
 			);
 			path = DuskTests;
 			sourceTree = "<group>";
@@ -205,7 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91AE614236CF29E00F3B364 /* WrappedColor.swift in Sources */,
+				C91AE5F3236C6BF400F3B364 /* NSAppearance+Modification.swift in Sources */,
+				C91AE616236D9CB900F3B364 /* DynamicColorProviderCollection.swift in Sources */,
 				C91CF86122A4408A007107BB /* ApearanceObserver.swift in Sources */,
+				C91AE5EB236BC9F100F3B364 /* DynamicColor.swift in Sources */,
 				C91CF86522A44268007107BB /* NSAppearance+Queries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91CF85422A41DC7007107BB /* DuskTests.swift in Sources */,
+				C91AE5EF236C664C00F3B364 /* DynamicColorTests.swift in Sources */,
+				C91AE5F5236C836900F3B364 /* NSAppearanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
