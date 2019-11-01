@@ -10,25 +10,26 @@ import XCTest
 @testable import Dusk
 
 class DuskTests: XCTestCase {
+    func testAppearanceIsDark() {
+        XCTAssertEqual(NSAppearance(named: .vibrantDark)?.isDark, true)
+        XCTAssertEqual(NSAppearance(named: .darkAqua)?.isDark, true)
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        XCTAssertEqual(NSAppearance(named: .vibrantLight)?.isDark, false)
+        XCTAssertEqual(NSAppearance(named: .aqua)?.isDark, false)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testOppositeAppearance() {
+        let aquaOpposite = NSAppearance(named: .aqua)?.oppositeAppearance
+        XCTAssertEqual(aquaOpposite?.bestMatch(from: [.darkAqua]), .darkAqua)
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        let darkAquaOpposite = NSAppearance(named: .darkAqua)?.oppositeAppearance
+        XCTAssertEqual(darkAquaOpposite?.bestMatch(from: [.aqua]), .aqua)
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+        let vibrantLightOpposite = NSAppearance(named: .vibrantLight)?.oppositeAppearance
+        XCTAssertEqual(vibrantLightOpposite?.bestMatch(from: [.vibrantDark]), .vibrantDark)
 
+        let vibrantDarkOpposite = NSAppearance(named: .vibrantDark)?.oppositeAppearance
+        XCTAssertEqual(vibrantDarkOpposite?.bestMatch(from: [.vibrantLight]), .vibrantLight)
+
+    }
 }

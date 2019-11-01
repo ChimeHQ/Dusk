@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91AE5E9236BC4F000F3B364 /* DuskTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DuskTests.xcconfig; sourceTree = "<group>"; };
 		C91CF84522A41DC7007107BB /* Dusk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dusk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91CF84822A41DC7007107BB /* Dusk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dusk.h; sourceTree = "<group>"; };
 		C91CF84922A41DC7007107BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 			children = (
 				C91CF85322A41DC7007107BB /* DuskTests.swift */,
 				C91CF85522A41DC7007107BB /* Info.plist */,
+				C91AE5E9236BC4F000F3B364 /* DuskTests.xcconfig */,
 			);
 			path = DuskTests;
 			sourceTree = "<group>";
@@ -229,7 +231,6 @@
 /* Begin XCBuildConfiguration section */
 		C91CF85722A41DC7007107BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C91CF85F22A41DEE007107BB /* Dusk.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -292,7 +293,6 @@
 		};
 		C91CF85822A41DC7007107BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C91CF85F22A41DEE007107BB /* Dusk.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -348,6 +348,7 @@
 		};
 		C91CF85A22A41DC7007107BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91CF85F22A41DEE007107BB /* Dusk.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -365,7 +366,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chimehq.Dusk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -376,6 +376,7 @@
 		};
 		C91CF85B22A41DC7007107BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91CF85F22A41DEE007107BB /* Dusk.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -393,7 +394,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chimehq.Dusk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -403,6 +403,7 @@
 		};
 		C91CF85D22A41DC7007107BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91AE5E9236BC4F000F3B364 /* DuskTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,6 +422,7 @@
 		};
 		C91CF85E22A41DC7007107BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91AE5E9236BC4F000F3B364 /* DuskTests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
