@@ -130,4 +130,21 @@ public class DynamicColor: WrappedColor {
     override open var colorNameComponent: NSColor.Name {
         return colorName
     }
+
+    public override func isEqual(_ object: Any?) -> Bool {
+        guard let dynamicColor = object as? DynamicColor else {
+            return false
+        }
+
+        // from the definition of NSColor(name:dynamicProvider:), two
+        // colors with the same name must be equal
+        return colorNameComponent == dynamicColor.colorNameComponent
+    }
+
+    public override var hash: Int {
+        // since the colorNameComponent defines the equality of colors, we can
+        // just use it for computing the hash as well
+        
+        return colorNameComponent.hashValue
+    }
 }

@@ -13,6 +13,18 @@ open class WrappedColor: NSColor {
         fatalError("effectiveColor must be returned by a subclass")
     }
 
+    public override func isEqual(_ object: Any?) -> Bool {
+        guard let wrappedColor = object as? WrappedColor else {
+            return false
+        }
+
+        return wrappedColor.effectiveColor == effectiveColor
+    }
+
+    public override var hash: Int {
+        return effectiveColor.hashValue
+    }
+
     override open var colorNameComponent: NSColor.Name {
         return effectiveColor.colorNameComponent
     }
