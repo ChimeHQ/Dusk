@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// NSColor subclass that defers all properties and behaivors to a wrapped color.
 open class WrappedColor: NSColor {
     open var effectiveColor: NSColor {
         fatalError("effectiveColor must be returned by a subclass")

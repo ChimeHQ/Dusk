@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// NSColor subclass that supports dynamic colors when you aren't able to store colors in asset catalogs.
 public class DynamicColor: WrappedColor {
     private static let colorNameKey = "dynamicColorName"
     private static let lightFallbackColorKey = "lightFallbackColor"
@@ -26,7 +27,6 @@ public class DynamicColor: WrappedColor {
     public override init() {
         fatalError()
     }
-
 
     /// Create a new dynamic color
     ///
