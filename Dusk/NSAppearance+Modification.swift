@@ -6,7 +6,7 @@
 //  Copyright © 2019 Chime Systems. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 extension NSAppearance {
 

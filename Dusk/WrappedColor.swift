@@ -6,7 +6,7 @@
 //  Copyright © 2019 Chime Systems. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 /// NSColor subclass that defers all properties and behaivors to a wrapped color.
 open class WrappedColor: NSColor {
