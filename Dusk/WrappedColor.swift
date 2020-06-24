@@ -23,7 +23,7 @@ open class WrappedColor: NSColor {
     }
 
     public override var hash: Int {
-        return effectiveColor.hashValue
+        return effectiveColor.hash
     }
 
     override open var colorNameComponent: NSColor.Name {
