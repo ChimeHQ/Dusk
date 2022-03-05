@@ -4,13 +4,13 @@ import PackageDescription
 
 let package = Package(
     name: "Dusk",
-    platforms: [.macOS("10.10")],
+    platforms: [.macOS(.v10_10)],
     products: [
         .library(name: "Dusk", targets: ["Dusk"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "Dusk", dependencies: [], path: "Dusk/"),
-        .testTarget(name: "DuskTests", dependencies: ["Dusk"], path: "DuskTests/"),
+        .target(name: "Dusk", dependencies: []),
+        .testTarget(name: "DuskTests", dependencies: ["Dusk"]),
     ]
 )

@@ -1,11 +1,3 @@
-//
-//  DynamicColorProviderCollection.swift
-//  Dusk
-//
-//  Created by Matt Massicotte on 2019-11-02.
-//  Copyright © 2019 Chime Systems. All rights reserved.
-//
-
 import Cocoa
 
 class DynamicColorProviderCollection {

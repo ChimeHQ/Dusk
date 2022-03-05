@@ -1,11 +1,3 @@
-//
-//  NSColor+legacyDynamicProvider.swift
-//  Dusk
-//
-//  Created by Matt Massicotte on 2019-10-31.
-//  Copyright © 2019 Chime Systems. All rights reserved.
-//
-
 import Cocoa
 
 /// NSColor subclass that supports dynamic colors when you aren't able to store colors in asset catalogs.
