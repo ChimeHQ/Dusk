@@ -8,9 +8,9 @@ Dusk is a small framework to aid in supporting Dark Mode on macOS. It is particu
 
 This project was made much easier thanks to the hard work of two people.
 
-[Paulo Andrade](https://twitter.com/pfandrade_)'s post about [Adopting Dark Mode and Older Macs](https://pfandrade.me/blog/adopting-dark-mode-and-older-macs/) was great for understanding how to subclass `NSColor`.
+Paulo Andrade's post about [Adopting Dark Mode and Older Macs](https://pfandrade.me/blog/adopting-dark-mode-and-older-macs/) was great for understanding how to subclass `NSColor`.
 
-[Daniel Jalkut](https://twitter.com/danielpunkass) published a fantastic series about [adopting Dark Mode](https://indiestack.com/2018/10/dark-mode-series-introduction/) on macOS. Many of the ideas, and even some of the code he presented, have found their way into this project.
+Daniel Jalkut published a fantastic series about [adopting Dark Mode](https://indiestack.com/2018/10/dark-mode-series-introduction/) on macOS. Many of the ideas, and even some of the code he presented, have found their way into this project.
 
 ## Integration
 
@@ -56,7 +56,7 @@ NSAppearance.withCurrent(.aqua) {
 
 ### Suggestions or Feedback
 
-We'd love to hear from you! Get in touch via [twitter](https://twitter.com/chimehq), an issue, or a pull request.
+We'd love to hear from you! Get in touch via an issue or pull request.
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
