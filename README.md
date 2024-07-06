@@ -1,5 +1,10 @@
+<div align="center">
+
 [![Build Status][build status badge]][build status]
 [![Platforms][platforms badge]][platforms]
+[![Matrix][matrix badge]][matrix]
+
+</div>
 
 # Dusk
 
@@ -67,3 +72,5 @@ By participating in this project you agree to abide by the [Contributor Code of 
 [build status badge]: https://github.com/ChimeHQ/Dusk/workflows/CI/badge.svg
 [platforms]: https://swiftpackageindex.com/ChimeHQ/Dusk
 [platforms badge]: https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FChimeHQ%2FDusk%2Fbadge%3Ftype%3Dplatforms
+[matrix]: https://matrix.to/#/%23chimehq%3Amatrix.org
+[matrix badge]: https://img.shields.io/matrix/chimehq%3Amatrix.org?label=Matrix
