@@ -9,10 +9,10 @@
 import XCTest
 @testable import Dusk
 
-class TestableWrappedColor: WrappedColor {
+final class TestableWrappedColor: WrappedColor, @unchecked Sendable {
     var testColor: NSColor?
 
-    override open var effectiveColor: NSColor {
+	public override var effectiveColor: NSColor {
         return testColor!
     }
 }

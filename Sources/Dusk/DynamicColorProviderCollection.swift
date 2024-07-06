@@ -1,7 +1,7 @@
 import Cocoa
 
-class DynamicColorProviderCollection {
-    typealias Provider = (NSAppearance) -> NSColor
+final class DynamicColorProviderCollection: @unchecked Sendable {
+    typealias Provider = @Sendable (NSAppearance) -> NSColor
 
     private let queue: DispatchQueue
     private var providers: [NSColor.Name: Provider]

@@ -1,14 +1,14 @@
 import Cocoa
 
 /// NSColor subclass that supports dynamic colors when you aren't able to store colors in asset catalogs.
-public class DynamicColor: WrappedColor {
+public class DynamicColor: WrappedColor, @unchecked Sendable {
     private static let colorNameKey = "dynamicColorName"
     private static let lightFallbackColorKey = "lightFallbackColor"
     private static let darkFallbackColorKey = "darkFallbackColor"
 
     private static let providerCollection = DynamicColorProviderCollection()
 
-    private var colorName: NSColor.Name
+    private let colorName: NSColor.Name
     private let lightFallbackColor: NSColor?
     private let darkFallbackColor: NSColor?
 
@@ -28,7 +28,7 @@ public class DynamicColor: WrappedColor {
     /// - Parameters:
     ///   - name: The unique name used to identify the color and reattach the dynamicProvider block after deserialization.
     ///   - dynamicProvider: this block provides the effective color
-    public init(name: NSColor.Name?, dynamicProvider: @escaping (NSAppearance) -> NSColor) {
+    public init(name: NSColor.Name?, dynamicProvider: @escaping @Sendable (NSAppearance) -> NSColor) {
         let usableName = name ?? UUID().uuidString
 
         self.colorName = usableName

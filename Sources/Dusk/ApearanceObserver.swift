@@ -4,6 +4,7 @@ extension NSNotification.Name {
     public static let appearanceDidChangeNotification = NSNotification.Name("appearanceChanged")
 }
 
+@MainActor
 public class AppearanceObserver {
     private let appearanceObserver: NSKeyValueObservation?
 
