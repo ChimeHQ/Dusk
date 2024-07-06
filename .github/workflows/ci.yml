@@ -4,17 +4,20 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
+      - 'CODE_OF_CONDUCT.md'
+      - '.editorconfig'
+      - '.spi.yml'
   pull_request:
     branches:
-      - '**'
+      - main
 
 jobs:
   test:
     name: Test
-    runs-on: macOS-latest
+    runs-on: macOS-14
     steps:
-      - uses: actions/checkout@v1
-      - name: swift test
-        run: swift test
-      - name: carthage
-        run: carthage build --no-skip-current
+      - uses: actions/checkout@v4
+      - name: Test platform ${{ matrix.destination }}
+        run: set -o pipefail && xcodebuild -scheme Dusk -destination "platform=macOS" test | xcbeautify
